@@ -1,0 +1,17 @@
+.Dogs{
+    text-align: center;
+}
+.Dogs-logo{
+    padding: 50px 0px 30px 0px;
+}
+.Dogs-logo img{
+    max-width: 250px;
+}
+.Dogs-list a{
+    color: black;
+    text-decoration: none;
+}
+.Dogs-list a:hover{
+    color: turquoise;
+    text-decoration: underline;
+}
