@@ -1,17 +1,17 @@
-.Dogs{
+.DogList{
     text-align: center;
 }
-.Dogs-logo{
-    padding: 50px 0px 30px 0px;
+.DogList-logo{
+    padding-bottom: 30px;
 }
-.Dogs-logo img{
+.DogList-logo img{
     max-width: 250px;
 }
-.Dogs-list a{
+.DogList-list a{
     color: black;
     text-decoration: none;
 }
-.Dogs-list a:hover{
+.DogList-list a:hover{
     color: turquoise;
     text-decoration: underline;
 }

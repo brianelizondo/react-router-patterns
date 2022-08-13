@@ -2,8 +2,9 @@ import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 
-import Dogs from "./Dogs";
-import Dog from "./Dog";
+import NavBar from "./NavBar";
+import DogList from "./DogList";
+import DogDetails from "./DogDetails";
 
 import whiskey from "./whiskey.jpg";
 import duke from "./duke.jpg";
@@ -13,10 +14,10 @@ import tubby from "./tubby.jpg";
 function App(props) {
     return (
         <div className="App">
+            <NavBar dogs={ props.dogs } />
             <Switch>
-                <Route exact path="/dogs/:name"><Dog /></Route>
-                <Route exact path="/dogs"><Dogs dogs={ props.dogs} /></Route>
-                <Route exact path="/"><Dogs dogs={ props.dogs} /></Route>
+                <Route exact path="/dogs/:dogName"><DogDetails dogs={ props.dogs } /></Route>
+                <Route exact path="/dogs"><DogList dogs={ props.dogs } /></Route>
                 <Redirect to="/dogs" />
             </Switch>
         </div>

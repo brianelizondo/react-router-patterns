@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Dog from "./Dog";
-import "./Dogs.css"
+import "./DogList.css"
 
 import dog_logo from "./dog_finder_logo.jpg"
 
-function Dogs({ dogs }){
+function DogList({ dogs }){
     return (
-        <div className="Dogs">
-            <div className="Dogs-logo"><img src={ dog_logo } alt="" /></div>
-            <div className="Dogs-list">
+        <div className="DogList">
+            <div className="DogList-logo"><img src={ dog_logo } alt="" /></div>
+            <div className="DogList-list">
                 <h2>PET's LIST:</h2>
                 { dogs.map(dogData => (<div key={ dogData.name.toLowerCase() }><Link to={ `/dogs/${ dogData.name.toLowerCase() }` }>{ dogData.name }</Link></div>)) }
             </div>
@@ -17,4 +16,4 @@ function Dogs({ dogs }){
     );
 }
 
-export default Dogs;
+export default DogList;
