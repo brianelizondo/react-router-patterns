@@ -11,7 +11,7 @@ function App() {
     const [colors, setColors] = useState(INITIAL_STATE);
 
     const addColor = newColor => {
-        setColors(colors => [...colors, newColor]);
+        setColors(colors => [newColor, ...colors]);
     };
 
     return (
