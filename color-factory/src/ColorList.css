@@ -1,0 +1,28 @@
+.ColorList{
+    text-align: center;
+}
+.ColorList-title{
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+.ColorList-title a{
+    color: white;
+    font-size: 26px;
+    text-decoration: underline;
+}
+.ColorList-title a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+.ColorList-colors a{
+    color: black;
+    text-decoration: underline;
+}
+.ColorList-colors a:hover{
+    color: aqua;
+    text-decoration: none;
+}
