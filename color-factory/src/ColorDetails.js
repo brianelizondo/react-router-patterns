@@ -1,10 +1,15 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import "./ColorDetails.css"
 
 function ColorDetails({ colors }){
     const { color } = useParams();
-    const colorData = colors.filter(colorArr => color === colorArr.name.toLowerCase())[0];
+    let colorData = colors.filter(colorArr => color === colorArr.name.toLowerCase());
+    if(colorData.length == 0){
+        return <Navigate replace to="/colors" />
+    }else{
+        colorData = colorData[0];
+    }
 
     return (
         <div className="ColorDetails" style={{ backgroundColor: colorData.code }}>
