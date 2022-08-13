@@ -1,0 +1,23 @@
+.ColorDetails{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px black;
+    padding-top: 50px;
+}
+
+.ColorDetails div{
+    padding: 50px 0px;
+}
+
+.ColorDetails-colors a{
+    color: white !important;
+    text-decoration: underline;
+}
+.ColorDetails-colors a:hover{
+    color: aqua !important;
+    text-decoration: none;
+}
