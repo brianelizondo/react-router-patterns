@@ -20,6 +20,7 @@ function App() {
                 <Route path="/colors/new" element={ <ColorNew addColor={addColor} /> } />
                 <Route path="/colors/:color" element={ <ColorDetails colors={colors} /> } />
                 <Route path="/colors" element={ <ColorList colors={colors} /> } />
+                <Route path="*" element={ <Navigate replace to="/colors" /> } />
             </Routes>
         </div>
     );
