@@ -1,0 +1,13 @@
+.Calculator{
+    padding-top: 100px;
+    text-align: center;
+}
+.Calculator-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Calculator-result{
+    font-size: 150px;
+    font-weight: bold;
+}
