@@ -1,0 +1,13 @@
+.Multiply{
+    padding-top: 100px;
+    text-align: center;
+}
+.Multiply-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Multiply-result{
+    font-size: 150px;
+    font-weight: bold;
+}

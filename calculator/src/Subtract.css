@@ -1,0 +1,13 @@
+.Subtract{
+    padding-top: 100px;
+    text-align: center;
+}
+.Subtract-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Subtract-result{
+    font-size: 150px;
+    font-weight: bold;
+}

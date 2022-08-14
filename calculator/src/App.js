@@ -1,13 +1,23 @@
-import logo from './logo.svg';
+import {React, useState } from 'react';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import Add from "./Add";
+import Subtract from "./Subtract";
+import Multiply from "./Multiply";
+import Divide from "./Divide";
 
-      </header>
-    </div>
-  );
+function App() {
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/add/:a/:b" element={ <Add /> } />
+                <Route path="/subtract/:a/:b" element={ <Subtract /> } />
+                <Route path="/multiply/:a/:b" element={ <Multiply /> } />
+                <Route path="/divide/:a/:b" element={ <Divide /> } />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

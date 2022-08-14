@@ -1,0 +1,13 @@
+.Divide{
+    padding-top: 100px;
+    text-align: center;
+}
+.Divide-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Divide-result{
+    font-size: 150px;
+    font-weight: bold;
+}
