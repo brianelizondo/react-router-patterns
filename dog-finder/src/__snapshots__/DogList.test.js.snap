@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`'DogList' matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="DogList"
+  >
+    <div
+      class="DogList-logo"
+    >
+      <img
+        alt=""
+        src="dog_finder_logo.jpg"
+      />
+    </div>
+    <div
+      class="DogList-list"
+    >
+      <h2>
+        PET's LIST:
+      </h2>
+      <div>
+        <a
+          href="/dogs/whiskey"
+        >
+          Whiskey
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
