@@ -1,5 +1,6 @@
 import {React, useState } from 'react';
 import { Routes, Route, Navigate } from "react-router-dom";
+import useLocalStorage from './Hooks';
 import './App.css';
 
 import ColorList from "./ColorList";
@@ -7,8 +8,7 @@ import ColorDetails from "./ColorDetails";
 import ColorNew from "./ColorNew";
 
 function App() {
-    const INITIAL_STATE = [];
-    const [colors, setColors] = useState(INITIAL_STATE);
+    const [colors, setColors] = useLocalStorage();
 
     const addColor = newColor => {
         setColors(colors => [newColor, ...colors]);
